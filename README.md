@@ -3,10 +3,12 @@
 NOTE: This is till Work in Progress. No warranty!
 
 ```
-docker run docker pull heinovski/plafosim-docker
+docker run heinovski/plafosim-docker --help
 ```
 
 ```
-docker build https://raw.githubusercontent.com/plafosim/plafosim-docker/main/Dockerfile -t plafosim-docker
-docker run plafosim-docker plafosim --help
+docker build . -t plafosim-docker
+docker run plafosim-docker plafosim --versiom
+docker tag plafosim-docker:latest heinovski/plafosim-docker:latest
+docker push heinovski/plafosim-docker:latest
 ```

@@ -4,4 +4,4 @@ LABEL Description="PlaFoSim"
 
 WORKDIR /app
 
-RUN pip3 install plafosim --disable-pip-version-check
+RUN pip3 install plafosim --disable-pip-version-check --upgrade
